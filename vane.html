@@ -11,14 +11,14 @@
 <body>
 
     <div class="topnav">
-        <a href="/JavaScript-Piano/index.html">Regular</a>
+        <a onclick="show(regular, vane)">Regular</a>
         <a class="active">Vane</a>
         <a href="/JavaScript-Piano/marti.html">Marti</a>
         <a href="/JavaScript-Piano/mela.html">MELA</a>
       </div>
       
 
-      <div class="piano">
+      <div class="piano" id="vane">
         <div data-note="DoVane" class="key white"></div>
         <div data-note="DoSVane" class="key black"></div>
         <div data-note="ReVane" class="key white"></div>
@@ -47,6 +47,11 @@
       <audio id="LaSVane" src="notes/NotasVane/11-LaSVane.mp3"></audio>
       <audio id="SiVane" src="notes/NotasVane/12-SiVane.mp3"></audio>
     
+
+
+
+
+      
 
 </body>
 </html>

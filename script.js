@@ -30,3 +30,104 @@ function playNote(key) {
   })
 }
 
+
+function show (want) {
+
+if (want == 'vane'){
+  var intro = document.getElementById('intro');
+  intro.style.display = 'none'; 
+
+  var want = document.getElementById(want);
+  var regular = document.getElementById('regular');
+  var marti = document.getElementById('marti');
+  var mela = document.getElementById('mela');
+  regular.style.display = 'none'; 
+  marti.style.display = 'none'; 
+  mela.style.display = 'none'; 
+  want.removeAttribute("style");
+
+  var navregular = document.getElementById('navregular');
+  var navmarti = document.getElementById('navmarti');
+  var navmela = document.getElementById('navmela');
+
+  var navvane = document.getElementById('navvane');
+  navvane.classList.toggle('active');
+
+  navregular.removeAttribute("class");
+  navmarti.removeAttribute("class");
+  navmela.removeAttribute("class");
+
+} else if (want == 'regular') {
+  var intro = document.getElementById('intro');
+  intro.style.display = 'none'; 
+
+  var want = document.getElementById(want);
+  var vane = document.getElementById('vane');
+  var marti = document.getElementById('marti');
+  var mela = document.getElementById('mela');
+  vane.style.display = 'none'; 
+  marti.style.display = 'none'; 
+  mela.style.display = 'none'; 
+  want.removeAttribute("style");
+
+  var navregular = document.getElementById('navregular');
+  var navmarti = document.getElementById('navmarti');
+  var navmela = document.getElementById('navmela');
+  var navvane = document.getElementById('navvane');
+
+  navregular.classList.toggle('active');
+  navvane.removeAttribute("class");
+  navmarti.removeAttribute("class");
+  navmela.removeAttribute("class");
+
+} else if (want == 'marti') {
+  var intro = document.getElementById('intro');
+  intro.style.display = 'none'; 
+
+  var want = document.getElementById(want);
+  var regular = document.getElementById('regular');
+  var vane = document.getElementById('vane');
+  var mela = document.getElementById('mela');
+  regular.style.display = 'none'; 
+  vane.style.display = 'none'; 
+  mela.style.display = 'none'; 
+  want.removeAttribute("style");
+
+  var navregular = document.getElementById('navregular');
+  var navmarti = document.getElementById('navmarti');
+  var navmela = document.getElementById('navmela');
+  var navvane = document.getElementById('navvane');
+  navmarti.classList.toggle('active');
+  navregular.removeAttribute("class");
+  navvane.removeAttribute("class");
+  navmela.removeAttribute("class");
+
+} else if (want == 'mela') {
+  var intro = document.getElementById('intro');
+  intro.style.display = 'none'; 
+  
+  var want = document.getElementById(want);
+  var regular = document.getElementById('regular');
+  var marti = document.getElementById('marti');
+  var vane = document.getElementById('vane');
+  regular.style.display = 'none'; 
+  marti.style.display = 'none'; 
+  vane.style.display = 'none'; 
+  want.removeAttribute("style");
+
+  var navregular = document.getElementById('navregular');
+  var navmarti = document.getElementById('navmarti');
+  var navmela = document.getElementById('navmela');
+  var navvane = document.getElementById('navvane');
+  navmela.classList.toggle('active');
+
+  navregular.removeAttribute("class");
+  navmarti.removeAttribute("class");
+  navvane.removeAttribute("class");
+}
+
+
+
+
+}
+

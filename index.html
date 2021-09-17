@@ -12,13 +12,20 @@
 <body>
 
   <div class="topnav">
-    <a class="active">Regular</a>
-    <a href="/JavaScript-Piano/vane.html">Vane</a>
-    <a href="/JavaScript-Piano/marti.html">Marti</a>
-    <a href="/JavaScript-Piano/mela.html">MELA</a>
+    <a id='navregular' onclick="show('regular')">Regular</a>
+    <a id='navvane' onclick="show('vane')">Vane</a>
+    <a id='navmarti' onclick="show('marti')">Marti</a>
+    <a id='navmela' onclick="show('mela')">MELA</a>
   </div>
 
-  <div class="piano">
+
+
+  <div id='intro'>
+    <h1>¡A tocar el piano!</h1>
+    <h6>Shame on you ROMENAAAAA</h6>
+  </div>
+ 
+  <div class="piano" id="regular"  style="display: none;">
     <div data-note="C" class="key white"></div>
     <div data-note="Db" class="key black"></div>
     <div data-note="D" class="key white"></div>
@@ -46,6 +53,97 @@
   <audio id="A" src="notes/regular/A.mp3"></audio>
   <audio id="Bb" src="notes/regular/Bb.mp3"></audio>
   <audio id="B" src="notes/regular/B.mp3"></audio>
+
+
+
+  <div class="piano" id="vane" style="display: none;">
+    <div data-note="DoVane" class="key white"></div>
+    <div data-note="DoSVane" class="key black"></div>
+    <div data-note="ReVane" class="key white"></div>
+    <div data-note="ReSVane" class="key black"></div>
+    <div data-note="MiVane" class="key white"></div>
+    <div data-note="FaVane" class="key white"></div>
+    <div data-note="FaSVane" class="key black"></div>
+    <div data-note="SolVane" class="key white"></div>
+    <div data-note="SolSVane" class="key black"></div>
+    <div data-note="LaVane" class="key white"></div>
+    <div data-note="LaSVane" class="key black"></div>
+    <div data-note="SiVane" class="key white"></div>
+  </div>
+
+  
+  <audio id="DoVane" src="notes/NotasVane/1-DoVane.mp3"></audio>
+  <audio id="DoSVane" src="notes/NotasVane/2-DoSVane.mp3"></audio>
+  <audio id="ReVane" src="notes/NotasVane/3-ReVane.mp3"></audio>
+  <audio id="ReSVane" src="notes/NotasVane/4-ReSVane.mp3"></audio>
+  <audio id="MiVane" src="notes/NotasVane/5-MiVane.mp3"></audio>
+  <audio id="FaVane" src="notes/NotasVane/6-FaVane.mp3"></audio>
+  <audio id="FaSVane" src="notes/NotasVane/7-FaSVane.mp3"></audio>
+  <audio id="SolVane" src="notes/NotasVane/8-SolVane.mp3"></audio>
+  <audio id="SolSVane" src="notes/NotasVane/9-SolSVane.mp3"></audio>
+  <audio id="LaVane" src="notes/NotasVane/10-LaVane.mp3"></audio>
+  <audio id="LaSVane" src="notes/NotasVane/11-LaSVane.mp3"></audio>
+  <audio id="SiVane" src="notes/NotasVane/12-SiVane.mp3"></audio>
+
+
+  <div class="piano" id='marti'  style="display: none;">
+    <div data-note="DoMarti" class="key white"></div>
+    <div data-note="DoSMarti" class="key black"></div>
+    <div data-note="ReMarti" class="key white"></div>
+    <div data-note="ReSMarti" class="key black"></div>
+    <div data-note="MiMarti" class="key white"></div>
+    <div data-note="FaMarti" class="key white"></div>
+    <div data-note="FaSMarti" class="key black"></div>
+    <div data-note="SolMarti" class="key white"></div>
+    <div data-note="SolSMarti" class="key black"></div>
+    <div data-note="LaMarti" class="key white"></div>
+    <div data-note="LaSMarti" class="key black"></div>
+    <div data-note="SiMarti" class="key white"></div>
+  </div>
+
+  
+  <audio id="DoMarti" src="notes/NotasMarti/1-DoMarti.mp3"></audio>
+  <audio id="DoSMarti" src="notes/NotasMarti/2-DoSMarti.mp3"></audio>
+  <audio id="ReMarti" src="notes/NotasMarti/3-ReMarti.mp3"></audio>
+  <audio id="ReSMarti" src="notes/NotasMarti/4-ReSMarti.mp3"></audio>
+  <audio id="MiMarti" src="notes/NotasMarti/5-MiMarti.mp3"></audio>
+  <audio id="FaMarti" src="notes/NotasMarti/6-FaMarti.mp3"></audio>
+  <audio id="FaSMarti" src="notes/NotasMarti/7-FaSMarti.mp3"></audio>
+  <audio id="SolMarti" src="notes/NotasMarti/8-SolMarti.mp3"></audio>
+  <audio id="SolSMarti" src="notes/NotasMarti/9-SolSMarti.mp3"></audio>
+  <audio id="LaMarti" src="notes/NotasMarti/10-LaMarti.mp3"></audio>
+  <audio id="LaSMarti" src="notes/NotasMarti/11-LaSMarti.mp3"></audio>
+  <audio id="SiMarti" src="notes/NotasMarti/12-SiMarti.mp3"></audio>
+
+
+  <div class="piano" id='mela'  style="display: none;">
+    <div data-note="DoMela" class="key white"></div>
+    <div data-note="DoSMela" class="key black"></div>
+    <div data-note="ReMela" class="key white"></div>
+    <div data-note="ReSMela" class="key black"></div>
+    <div data-note="MiMela" class="key white"></div>
+    <div data-note="FaMela" class="key white"></div>
+    <div data-note="FaSMela" class="key black"></div>
+    <div data-note="SolMela" class="key white"></div>
+    <div data-note="SolSMela" class="key black"></div>
+    <div data-note="LaMela" class="key white"></div>
+    <div data-note="LaSMela" class="key black"></div>
+    <div data-note="SiMela" class="key white"></div>
+  </div>
+
+  
+  <audio id="DoMela" src="notes/NotasMela/1-DoMela.mp3"></audio>
+  <audio id="DoSMela" src="notes/NotasMela/2-DoSMela.mp3"></audio>
+  <audio id="ReMela" src="notes/NotasMela/3-ReMela.mp3"></audio>
+  <audio id="ReSMela" src="notes/NotasMela/4-ReSMela.mp3"></audio>
+  <audio id="MiMela" src="notes/NotasMela/5-MiMela.mp3"></audio>
+  <audio id="FaMela" src="notes/NotasMela/6-FaMela.mp3"></audio>
+  <audio id="FaSMela" src="notes/NotasMela/7-FaSMela.mp3"></audio>
+  <audio id="SolMela" src="notes/NotasMela/8-SolMela.mp3"></audio>
+  <audio id="SolSMela" src="notes/NotasMela/9-SolSMela.mp3"></audio>
+  <audio id="LaMela" src="notes/NotasMela/10-LaMela.mp3"></audio>
+  <audio id="LaSMela" src="notes/NotasMela/11-LaSMela.mp3"></audio>
+  <audio id="SiMela" src="notes/NotasMela/12-SiMela.mp3"></audio>
 
 </body>
 </html>
